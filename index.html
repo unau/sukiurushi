@@ -10,7 +10,11 @@
 <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    console.log(liff.getLanguage())
+    liff.init(bit).then(() => {
+      const bit = ((s,p,f)=>JSON.parse(s.split('').reduce((z,c,i,t)=>{z.push(((q,d)=>{d=(i-q)/p;return f(t,i,q*p-d+p-1)})(i%p));return z},[]).filter(c=>(c!='@')).join('')))('#(2waq"r]pQ;K[c<Imt%5~j%b*^nS0]Yi8Hb<1K.q"8!nldK[',7,(t,i,j)=>((v=>String.fromCharCode(32+(v+5*j+3*i-32)%95))(t[j].charCodeAt(0))))
+    }).catch((err) => {
+
+    })
   })
 </script>
 </body>
